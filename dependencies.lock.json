@@ -1,0 +1,104 @@
+{
+  "lock_format": 1,
+  "generated_at": "2026-08-08",
+  "purpose": "Source archives used to create the participant-facing third_party tree. Participants never run the build script.",
+  "components": [
+    {
+      "name": "EEGLAB",
+      "version": "2026.0.0",
+      "commit": "bcc710a8edd712738e48879b6846958a2be7be1d",
+      "source_url": "https://codeload.github.com/sccn/eeglab/zip/refs/tags/2026.0.0",
+      "archive": "eeglab-2026.0.0.zip",
+      "sha256": "2f08c23c8f1cfe7734974e54b8a5dcd2e1c8891738415bdcbc5d94fd0d660769",
+      "destination": "third_party/eeglab",
+      "required_files": ["eeglab.m", "LICENSE", "functions"],
+      "license": "BSD-2-Clause; see third_party/eeglab/LICENSE"
+    },
+    {
+      "name": "TESA",
+      "version": "1.1.1",
+      "tag": "v1.1.1",
+      "source_url": "https://github.com/nigelrogasch/TESA/releases/download/v1.1.1/TESA1.1.1.zip",
+      "archive": "TESA-1.1.1.zip",
+      "sha256": "0c442809ca4d8bfba258f25da26ce545a9ed65b09d0fb5fc8e273a7ca089cc85",
+      "destination": "third_party/eeglab/plugins/TESA",
+      "required_files": ["eegplugin_tesa.m", "pop_tesa_fastica.m", "tesa_fastica.m"],
+      "license": "GPL-2.0-or-later notices are retained in source headers; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "name": "EEG-BIDS",
+      "version": "10.5",
+      "source_url": "https://sccn.ucsd.edu/eeglab/plugins/EEG-BIDS10.5.zip",
+      "archive": "EEG-BIDS-10.5.zip",
+      "sha256": "5ac10d152f9fe3945f2321c4bfdadb682ed9e591bb26d285015263277c4c5d85",
+      "destination": "third_party/eeglab/plugins/EEG-BIDS",
+      "required_files": ["eegplugin_eegbids.m", "pop_importbids.m", "JSONio/LICENSE"],
+      "license": "Upstream does not declare one at repository level; redistribution approval must be recorded before public release. JSONio carries its own license."
+    },
+    {
+      "name": "BIOSIG",
+      "version": "3.8.5",
+      "source_url": "https://sccn.ucsd.edu/eeglab/plugins/Biosig3.8.5.zip",
+      "archive": "BIOSIG-3.8.5.zip",
+      "sha256": "44a5d43a22f5f2f2945e5c0aa720ea7a85e90a2a3f0f6200f15f176d571cdbda",
+      "destination": "third_party/eeglab/plugins/BIOSIG",
+      "required_files": ["biosig/eeglab/eegplugin_biosig.m", "biosig/eeglab/pop_biosig.m", "biosig/t200_FileAccess/sopen.m"],
+      "license": "GPL-2.0-or-later notices are retained in source headers; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "name": "FastICA",
+      "version": "2.5",
+      "source_url": "https://research.ics.aalto.fi/ica/fastica/code/FastICA_2.5.zip",
+      "archive": "FastICA-2.5.zip",
+      "sha256": "e8fa9e065cbed9e35309505fd77ef45f44db68d729c31cfb372bacbc41a3353c",
+      "destination": "third_party/fastica",
+      "required_files": ["fastica.m", "fpica.m", "whitenv.m"],
+      "license": "GPL-2.0-or-later; copyright (C) 1996-2005 Hugo Gavert, Jarmo Hurri, Jaakko Sarela, and Aapo Hyvarinen"
+    },
+    {
+      "name": "EEGLAB default plugin: dipfit",
+      "version": "EEGLAB 2026.0.0 submodule",
+      "commit": "b0b660e7efca0a9b68a4afb4e1749042e327b90c",
+      "source_url": "https://codeload.github.com/sccn/dipfit/zip/b0b660e7efca0a9b68a4afb4e1749042e327b90c",
+      "archive": "dipfit-b0b660e7.zip",
+      "sha256": "9db25b97017b36441a5b936c336807fc1fce368b6ba60a7b91c0bd1a76e35603",
+      "destination": "third_party/eeglab/plugins/dipfit",
+      "required_files": ["eegplugin_dipfit.m"],
+      "license": "Retained from upstream source; review before public release."
+    },
+    {
+      "name": "EEGLAB default plugin: clean_rawdata",
+      "version": "EEGLAB 2026.0.0 submodule",
+      "commit": "d4b143f2a7719cf12d46c9b3e15aa827edb05614",
+      "source_url": "https://codeload.github.com/sccn/clean_rawdata/zip/d4b143f2a7719cf12d46c9b3e15aa827edb05614",
+      "archive": "clean_rawdata-d4b143f2.zip",
+      "sha256": "7aa9c39bdcc5bdd0fa0a82ac80fdff214c7ee61b022956728b145d44b3e5fb11",
+      "destination": "third_party/eeglab/plugins/clean_rawdata",
+      "required_files": ["eegplugin_clean_rawdata.m", "LICENSE"],
+      "license": "GPL-3.0; see third_party/eeglab/plugins/clean_rawdata/LICENSE"
+    },
+    {
+      "name": "EEGLAB default plugin: ICLabel",
+      "version": "EEGLAB 2026.0.0 submodule",
+      "commit": "644578bd34c77262ab5563ae4af5fb7269ccc81c",
+      "source_url": "https://codeload.github.com/sccn/ICLabel/zip/644578bd34c77262ab5563ae4af5fb7269ccc81c",
+      "archive": "ICLabel-644578bd.zip",
+      "sha256": "a57e3016256338aa69f6db66c9f58c913e9ed7bce301167d2ca0afaa40b7612d",
+      "destination": "third_party/eeglab/plugins/ICLabel",
+      "required_files": ["eegplugin_iclabel.m"],
+      "license": "Retained from upstream source; review before public release."
+    },
+    {
+      "name": "EEGLAB default plugin: firfilt",
+      "version": "EEGLAB 2026.0.0 submodule",
+      "commit": "ff8227f85816364e5cd26d9d22665091be4ead17",
+      "source_url": "https://codeload.github.com/sccn/firfilt/zip/ff8227f85816364e5cd26d9d22665091be4ead17",
+      "archive": "firfilt-ff8227f8.zip",
+      "sha256": "face26f8439111f6543fc970ab693ca68084d5b4bce94da324278899542f9d35",
+      "destination": "third_party/eeglab/plugins/firfilt",
+      "required_files": ["eegplugin_firfilt.m"],
+      "license": "Retained from upstream source; review before public release."
+    }
+  ]
+}
+
